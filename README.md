@@ -25,7 +25,7 @@ The script make the following tests (and some others) :
 
 When the test is performed, you'll see a result page like this.
 
-![Screenshot of test results in development](http://...)
+![Screenshot of test results in development](https://raw.githubusercontent.com/Dogstudio/hosting-for-dogs/master/docs/images/test-pass.png)
 
 The green ones meet the needs of our CMS while the reds need your attention.
 You can click on each one to obtain more informations.
