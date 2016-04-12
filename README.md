@@ -10,7 +10,7 @@ To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we
 * place the file in your **web root folder**.
 * and **access your site** using your configured domain.
 
-> Direct download.
+> [Direct download](https://raw.githubusercontent.com/Dogstudio/hosting-for-dogs/master/src/hostdog.php).
 
 ## Test results
 
