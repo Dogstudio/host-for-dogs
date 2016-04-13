@@ -266,7 +266,6 @@ class HostDog implements Countable, Iterator
      */
     public function testWriteAccess()
     {
-        $messages = [];
         $state = null;
         $dirBase = dirname(__FILE__);
         $dirTest = 'files';
@@ -277,6 +276,11 @@ class HostDog implements Countable, Iterator
         $currentUser = get_current_user();
         $dirIterator = new DirectoryIterator($dirBase);
         $dirInformations = posix_getpwuid($dirIterator->getOwner());
+
+        $messages = [
+            sprintf('You must create a directory <code>%s</code>.', $dirTest),
+            spring('And give write access to the user <code>%s</code> on this folder.', $currentUser)
+        ];
 
         if(file_exists($dirPath)) {
             $messages[] = sprintf('The directory <strong>%s</strong> already exist.', $dirTest);
