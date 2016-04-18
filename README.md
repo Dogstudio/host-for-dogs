@@ -2,7 +2,7 @@
 
 > Test your hosting for Dogstudio CMS
 
-To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we have coded a small script that make some validations for you.
+To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we have coded a small script that runs some validations for you.
 
 ## Getting started
 
@@ -14,16 +14,16 @@ To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we
 
 ## Test results
 
-The script make the following tests (and some others) :
+The script tests the following settings (and some others) :
 
 * The PHP version
 * Some PHP parameters like : `max_execution_time`, `memory_limit`.
-* The domain configuration : is your site accessible with your domain.
-* The write acces on directories and files fr the web user.
-* The database access _(you must enter the connexion parameters, manually)_.
+* The domain configuration : is your site accessible using your domain.
+* The write access on directories and files for the web user.
+* The database access _(you must enter the connection parameters, manually)_.
 * If the server can send email.
 
-When the test is performed, you'll see a result page like this.
+When the tests are done, you'll see a result page like this.
 
 ![Screenshot of test results in development](https://raw.githubusercontent.com/Dogstudio/hosting-for-dogs/master/docs/images/test-pass.png)
 
