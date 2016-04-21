@@ -279,7 +279,7 @@ class HostDog implements Countable, Iterator
 
         $messages = [
             sprintf('You must create a directory <code>%s</code>.', $dirTest),
-            spring('And give write access to the user <code>%s</code> on this folder.', $currentUser)
+            sprintf('And give write access to the user <code>%s</code> on this folder.', $currentUser)
         ];
 
         if(file_exists($dirPath)) {
