@@ -10,7 +10,7 @@ To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we
 * place the file in your **web root folder**.
 * and **access your site** using your configured domain.
 
-> [Direct download](https://raw.githubusercontent.com/Dogstudio/hosting-for-dogs/master/src/hostdog.php).
+> [Direct download](https://raw.githubusercontent.com/Dogstudio/hosting-for-dogs/master/hostdog.php).
 
 ## Test results
 
@@ -29,3 +29,29 @@ When the tests are done, you'll see a result page like this.
 
 The green ones meet the needs of our CMS while the reds need your attention.
 You can click on each one to obtain more informations.
+
+## Parameters 
+
+The script defines some configuration parameters that you can adapt according your needs. 
+Simply create a `.env` file in the same folder as the script : 
+
+```
+#
+# Hostdog - Sample Environnement Parameters
+#
+
+# You can exclude some test during the execution.
+# EXCLUDED=all
+# EXCLUDED=mail,database,domain,urlrewriting,writeaccess,memorylimit,postmaxsize,maxuploadsize,executiontime,gd,phpinfo,serverinfos
+
+# PHP Parameters
+TEST_PHP_VERSION=5.5.16
+TEST_MAX_EXECUTION_TIME=30
+TEST_MEMORY_LIMIT=64
+TEST_POST_SIZE=16
+TEST_MAX_UPLOAD=16
+
+# Emails Parameters
+TEST_EMAIL_TO=info@dogstudio.be
+TEST_EMAIL_FROM=noreply@dogstudio.be
+```
