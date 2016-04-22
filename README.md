@@ -1,6 +1,6 @@
 # HOSTDOG 
 
-> Test your hosting for Dogstudio CMS
+> Test your hosting for Dogstudio CMS.
 
 To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we have coded a small script that runs some validations for you.
 
