@@ -3,6 +3,7 @@
 > Test your hosting for Dogstudio CMS.
 
 To test if your hosting is compatible with our CMS <strong>Emulsion</strong>, we have coded a small script that runs some validations for you.
+It can be used for the most of other framework or CMS. For example, we use it also for our <strong>Wordpress</strong> developments.
 
 ## Getting started
 
@@ -45,7 +46,7 @@ Simply create a `.env` file in the same folder as the script :
 # EXCLUDED=mail,database,domain,urlrewriting,writeaccess,memorylimit,postmaxsize,maxuploadsize,executiontime,gd,phpinfo,serverinfos
 
 # PHP Parameters
-TEST_PHP_VERSION=5.5.16
+TEST_PHP_VERSION=7.1.0
 TEST_MAX_EXECUTION_TIME=30
 TEST_MEMORY_LIMIT=64
 TEST_POST_SIZE=16
