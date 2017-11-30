@@ -13,7 +13,7 @@ class HostDog implements Countable, Iterator
     const DEBUG = false;
     const EXCLUDED_TEST = '';
 
-    const TEST_PHP_VERSION = '7.0.0';
+    const TEST_PHP_VERSION = '5.6.0';
     const TEST_MAX_EXECUTION_TIME = 30;
     const TEST_MEMORY_LIMIT = 64;
     const TEST_POST_SIZE = 16;
@@ -205,7 +205,11 @@ class HostDog implements Countable, Iterator
         $errorMessage = null;
 
         try {
-            $hostNames = [gethostname(), $this->getCalledHost(), 'localhost'];
+            $hostNames = array(
+                gethostname(),
+                $this->getCalledHost(),
+                'localhost'
+            );
 
             $curlHandler = curl_init();
             curl_setopt_array($curlHandler, $this->options['curl']);
@@ -214,7 +218,7 @@ class HostDog implements Countable, Iterator
                 throw new HostDogException('Unable to initialize cUrl');
             }
 
-            $curlSuccess = false; $infos=[];
+            $curlSuccess = false; $infos=array();
             foreach($hostNames as $host) {
                 $curlUrl = sprintf('http://%s/%s', $host, $this->options['rewrite_url']);
 
@@ -277,10 +281,10 @@ class HostDog implements Countable, Iterator
         $dirIterator = new DirectoryIterator($dirBase);
         $dirInformations = posix_getpwuid($dirIterator->getOwner());
 
-        $messages = [
+        $messages = array(
             sprintf('You must create a directory <code>%s</code>.', $dirTest),
             sprintf('And give write access to the user <code>%s</code> on this folder.', $currentUser)
-        ];
+        );
 
         if(file_exists($dirPath)) {
             $messages[] = sprintf('The directory <strong>%s</strong> already exist.', $dirTest);
