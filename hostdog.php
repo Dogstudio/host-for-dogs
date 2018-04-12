@@ -13,7 +13,7 @@ class HostDog implements Countable, Iterator
     const DEBUG = false;
     const EXCLUDED_TEST = '';
 
-    const TEST_PHP_VERSION = '5.6.0';
+    const TEST_PHP_VERSION = '7.2.0';
     const TEST_MAX_EXECUTION_TIME = 30;
     const TEST_MEMORY_LIMIT = 64;
     const TEST_POST_SIZE = 16;
