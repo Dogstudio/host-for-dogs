@@ -1,8 +1,8 @@
 <?php
 /**
- * Hosting Validation Script for Dogstudio
+ * Hosting Validation Script for La niche
  *
- * @copyright Dogstudio
+ * @copyright La niche
  * @license MIT
  */
 error_reporting(E_ALL & ~E_NOTICE);
@@ -18,8 +18,8 @@ class HostDog implements Countable, Iterator
     const TEST_MEMORY_LIMIT = 64;
     const TEST_POST_SIZE = 16;
     const TEST_MAX_UPLOAD = 16;
-    const TEST_EMAIL_TO = 'info@dogstudio.be';
-    const TEST_EMAIL_FROM = 'noreply@dogstudio.be';
+    const TEST_EMAIL_TO = 'hello@laniche.com';
+    const TEST_EMAIL_FROM = 'noreply@laniche.com';
     const TEST_REWRITE_URL = 'test_rewrite_url';
     const TEST_DOMAIN_URL = 'test_domain_url';
 
